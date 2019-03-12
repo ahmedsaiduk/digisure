@@ -1,0 +1,14 @@
+%p#notice= notice
+%p
+  %strong User:
+  = @transaction.user.email
+%p
+  %strong Transaction with:
+  = @transaction.transaction_with.email
+%p
+  %strong State:
+  = @transaction.transaction_state
+%p
+  %strong Amount:
+  = @transaction.amount
+= link_to 'Back', transactions_path
